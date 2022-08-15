@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="container">
+        <div id="menu-btn-1" class="menu-1 is-active">
+            <div></div>
+        </div>
+        <div id="menu-btn-2" class="menu-2 is-active">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+
+</body>
+<script>
+    let menuBtn1 = document.getElementById('menu-btn-1');
+    menuBtn1.addEventListener('click',()=>{
+        if(menuBtn1.classList.contains('is-active')){
+            menuBtn1.classList.remove('is-active')
+        } else {
+            menuBtn1.classList.add('is-active')
+        }
+    });
+    let menuBtn2 = document.getElementById('menu-btn-2');
+    menuBtn2.addEventListener('click',()=>{
+        if(menuBtn2.classList.contains('is-active')){
+            menuBtn2.classList.remove('is-active')
+        } else {
+            menuBtn2.classList.add('is-active')
+        }
+    })
+</script>
+</html>
